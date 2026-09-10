@@ -15,7 +15,8 @@ import java.util.List;
 @RequestMapping("/api/expenses")
 @CrossOrigin(origins = {
         "http://localhost:5173",
-        "http://localhost:5174"
+        "http://localhost:5174",
+        "https://ai-expense-tracker-nine-lime.vercel.app"
 })
 public class ExpenseController {
 
