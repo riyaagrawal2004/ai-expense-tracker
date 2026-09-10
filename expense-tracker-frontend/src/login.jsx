@@ -12,7 +12,7 @@ function Login({ onLogin, onShowRegister }) {
 
     try {
       const response = await fetch(
-        `http://localhost:8080/api/auth/login?username=${encodeURIComponent(username)}&password=${encodeURIComponent(password)}`,
+`https://ai-expense-tracker-svv8.onrender.com/api/auth/login?username=${encodeURIComponent(username)}&password=${encodeURIComponent(password)}`,
         {
           method: "POST",
         }

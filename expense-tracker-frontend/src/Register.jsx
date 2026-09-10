@@ -15,7 +15,7 @@ function Register({ onShowLogin }) {
 
     try {
       const response = await fetch(
-        `http://localhost:8080/api/auth/register?username=${encodeURIComponent(username)}&password=${encodeURIComponent(password)}`,
+       `https://ai-expense-tracker-svv8.onrender.com/api/auth/register?username=${encodeURIComponent(username)}&password=${encodeURIComponent(password)}`,
         {
           method: "POST",
         }

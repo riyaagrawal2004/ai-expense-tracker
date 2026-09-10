@@ -3,13 +3,12 @@ import { useEffect, useMemo, useState } from "react";
 import Login from "./login";
 import Register from "./Register";
 
-const API_URL = "http://localhost:8080/api/expenses";
-
+const API_URL = "https://ai-expense-tracker-svv8.onrender.com/api/expenses";
 const AI_ANALYSIS_URL =
-  "http://localhost:8080/api/expenses/ai-analysis";
+  "https://ai-expense-tracker-svv8.onrender.com/api/expenses/ai-analysis";
 
 const AI_CATEGORIZE_URL =
-  "http://localhost:8080/api/expenses/categorize";
+  "https://ai-expense-tracker-svv8.onrender.com/api/expenses/categorize";
 
 const CATEGORY_OPTIONS = [
   "Food",
