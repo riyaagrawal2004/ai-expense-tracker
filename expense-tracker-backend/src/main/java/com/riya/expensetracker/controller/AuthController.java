@@ -5,9 +5,14 @@ import com.riya.expensetracker.service.UserService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.CrossOrigin;
 
 @RestController
 @RequestMapping("/api/auth")
+@CrossOrigin(
+        originPatterns = "https://*.vercel.app",
+        allowCredentials = "true"
+)
 public class AuthController {
 
     private final UserService userService;
